@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <!-- Game Showcase -->
+    <section class="container">
+      <!-- Player 1 -->
+      <section class="player0 active-player ">
+        <div class="about">
+          <h3 class="player-title0">Player 1</h3>
+          <h2 class="total0">0</h2>
+        </div>
+
+        <div class="current">
+          <h3 class="current-title0">Current</h3>
+          <h4 class="current-score0">0</h4>
+        </div>
+      </section>
+
+      <!-- Player 2 -->
+      <section class="player1 deactive-player">
+        <div class="about">
+          <h3 class="player-title1">Player 2</h3>
+          <h2 class="total1">0</h2>
+        </div>
+
+        <div class="current">
+          <h3 class="current-title1">Current</h3>
+          <h4 class="current-score1">0</h4>
+        </div>
+      </section>
+
+      <!-- Game Joystick -->
+    <section class="joystick">
+        <img src="./images/dice1.png" alt="dice" class="dice hidden" />
+        <img src="./images/dice2.png" alt="dice" class="dice hidden" />
+        <img src="./images/dice3.png" alt="dice" class="dice hidden" />
+        <img src="./images/dice4.png" alt="dice" class="dice hidden" />
+        <img src="./images/dice5.png" alt="dice" class="dice hidden" />
+        <img src="./images/dice6.png" alt="dice" class="dice hidden" />
+
+        <button class="btn roll">Roll </button>
+        <button class="btn hold">Hold 📥</button>
+        <button class="btn reset">Reset ♻️</button>
+        <section class="option">
+            <button class="btn help">Help</button>
+        </section>
+      
+    </section>
+    <p class="langmsg"></p>
+    <div class="modal-window">
+      <div class="modal-message">
+        <div class="x-button">
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
+        <p class="modal-content-en" dir="ltr">
+          1) If your Dice number is equal to "1" before "Hold" it, You will lose
+          all of your "Current" scores and the game will automatically change
+          the player, so before that, use Hold button! <br />
+          <br />
+          2) If your total score greater than or equal to "100", We want to say
+          to you "Congratulations", You just won the game !
+        </p>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+   
+  </body>
+</html>
